@@ -138,7 +138,7 @@ h1, h2, h3, h4, p{
   #main-content{
 
     margin: 0 2%;
-    width: 90%;
+    width: 100%;
     text-align: left;
   }
 
@@ -150,16 +150,18 @@ h1, h2, h3, h4, p{
     width: 100%;
   }
   #menu-button {
-
-    margin-top: 1rem;
+    width: 100%;
+    margin: 0.8rem 0;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: right;
     border: none;
-    height: 40px;
+    height: 50px;
+
     background-color: rgba(220, 201, 201, 0);
   }
   #menu-button>img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 }

@@ -101,18 +101,21 @@ h1, h2, h3, h4, p{
     background-size: auto 100%;
     width: 100%;
     height: 100%;
+    overflow: auto;
   }
   #main-nav-container {
-    position: absolute;
+    overflow-y:scroll ;
+    height: 100%;
     width: 40%;
-    height: 180%;
     display: flex;
+    position: absolute;
     justify-content: right;
     flex-direction: column;
     transition: width 0.2s, height 0.2s;
+
   }
   #nav-container {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     justify-content: left;
@@ -141,7 +144,7 @@ h1, h2, h3, h4, p{
   /*Main content*/
 
   #main-content{
-
+    overflow-y:scroll ;
     margin: 0 10vw 0 2%;
 
     width: 100%;
@@ -157,13 +160,15 @@ h1, h2, h3, h4, p{
     width: 100%;
   }
   #menu-button {
-    width: 100%;
+    position: fixed;
+    right:  0;
     margin: 0.4rem 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
     border: none;
     height: 50px;
+    width: 50px;
 
     background-color: rgba(220, 201, 201, 0);
     z-index: 12;

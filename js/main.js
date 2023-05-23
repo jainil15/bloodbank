@@ -36,5 +36,7 @@ onload = () => {
       }
     }
   }
+  let main_div = document.getElementById("main-div")
+
 }
 

@@ -1,0 +1,166 @@
+* {
+  font-family: Arial;
+  color: #dcc9c9;
+}
+
+body {
+  background-color: rgba(255, 0, 0, 0.32);
+
+}
+
+.container {
+  display: flex;
+  justify-content: right;
+  align-content: flex-end;
+  background-color: rgba(255, 0, 0, 0.72);
+}
+
+#main-nav {
+  max-width: 20rem;
+  width: 30%;
+  display: flex;
+  padding: 1rem;
+  margin-right: 13%;
+
+  justify-content: space-around;
+  /*background-color: rgba(35, 96, 87, 0.4);*/
+}
+#first-main,#second-main {
+  width: 49%;
+}
+
+
+
+#main-nav>a {
+
+  padding: 10px;
+  color: aliceblue;
+  text-decoration: none;
+}
+#main-nav>a:hover{
+  color: #490000;
+}
+
+
+#main-div {
+  background-image: url("../img/24092.jpg");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+
+
+}
+#main-content{
+
+  margin: 0 15%;
+  text-align: left;
+}
+
+.\.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.jumbo {
+  color: #600909;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-color: rgba(227, 213, 213, 0.55);
+}
+h1, h2, h3, h4, p{
+  padding: 1rem;
+
+}
+.question {
+  border-radius: 0.5rem;
+  background-color: rgba(255, 0, 0, 0.28);
+}
+.inter {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.\.flexbox>p{
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+
+#menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #main-div{
+    display: flex;
+    flex-direction: row-reverse;
+    background-size: auto 100%;
+
+  }
+  #main-nav-container {
+
+    width: 40%;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    transition: width 0.2s, height 0.2s;
+  }
+  #nav-container {
+
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+  }
+
+  #main-nav {
+    padding: 0 0;
+    width: 100%;
+    height: 7rem;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #main-nav>a {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+    color: aliceblue;
+    text-decoration: none;
+  }
+  #main-nav>a:hover{
+    color: #490000;
+    background-color: #fcdede;;
+  }
+
+  /*Main content*/
+
+  #main-content{
+
+    margin: 0 2%;
+    width: 90%;
+    text-align: left;
+  }
+
+  .\.flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+  #first-main, #second-main  {
+    width: 100%;
+  }
+  #menu-button {
+
+    margin: 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    border: none;
+    width: 90%;
+    height: 80px;
+    background-color: rgba(220, 201, 201, 0);
+  }
+  #menu-button>img {
+    width: 80px;
+    height: 80px;
+  }
+}

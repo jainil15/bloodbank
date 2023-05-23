@@ -7,9 +7,11 @@ onload = () => {
     if(menu_state) {
       container.style.display = "flex";
       main_container.style.width = "40%"
+
       menu_state = false
     }
     else {
+
       container.style.display = "none";
       main_container.style.width="3.2rem"
       menu_state = true

@@ -43,13 +43,14 @@ body {
 
 
 #main-div {
+
   background-image: url("../img/24092.jpg");
   width: 100%;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
-  flex-direction: column;
+
 
 
 }
@@ -95,29 +96,33 @@ h1, h2, h3, h4, p{
 @media screen and (max-width: 800px) {
   #main-div{
     display: flex;
+    justify-content: flex-start;
     flex-direction: row-reverse;
     background-size: auto 100%;
-
+    width: 100%;
+    height: 100%;
   }
   #main-nav-container {
-
+    position: absolute;
     width: 40%;
+    height: 180%;
     display: flex;
     justify-content: right;
     flex-direction: column;
     transition: width 0.2s, height 0.2s;
   }
   #nav-container {
-
+    position: absolute;
     width: 100%;
     height: 100%;
     justify-content: left;
   }
 
   #main-nav {
+
     padding: 0 0;
     width: 100%;
-    height: 7rem;
+    height: 10%;
     justify-content: space-between;
     flex-direction: column;
   }
@@ -137,8 +142,10 @@ h1, h2, h3, h4, p{
 
   #main-content{
 
-    margin: 0 2%;
+    margin: 0 10vw 0 2%;
+
     width: 100%;
+    justify-self: left;
     text-align: left;
   }
 
@@ -151,7 +158,7 @@ h1, h2, h3, h4, p{
   }
   #menu-button {
     width: 100%;
-    margin: 0.8rem 0;
+    margin: 0.4rem 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
@@ -159,6 +166,7 @@ h1, h2, h3, h4, p{
     height: 50px;
 
     background-color: rgba(220, 201, 201, 0);
+    z-index: 12;
   }
   #menu-button>img {
     width: 50px;

@@ -11,7 +11,7 @@ onload = () => {
     }
     else {
       container.style.display = "none";
-      main_container.style.width="6.4rem"
+      main_container.style.width="5rem"
       menu_state = true
     }
   }

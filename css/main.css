@@ -93,34 +93,46 @@ h1, h2, h3, h4, p{
   font-size: 1.1rem;
 }
 
-#menu-button {
+#menu-button, #cancel-button {
   display: none;
 }
 
 @media screen and (max-width: 800px) {
   #main-div{
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
+    flex-direction: column;
     background-size: auto 100%;
     width: 100%;
     height: 100%;
     overflow: auto;
   }
+
   #main-nav-container {
-    overflow-y:scroll ;
-    height: 100%;
-    width: 40%;
+    background-color: red;
+    position: fixed;
+    overflow: hidden;
     display: flex;
-    position: absolute;
-    justify-content: right;
-    flex-direction: column;
-    transition: width 0.2s, height 0.2s;
+    flex-direction: row-reverse;
+    width: 100%;
+    /*height: 3.2rem;*/
+    top: 0;
+    right: 0;
 
   }
+
+  /*#main-nav-container {*/
+  /*  overflow-y:scroll ;*/
+  /*  height: 100%;*/
+  /*  width: 40%;*/
+  /*  display: flex;*/
+  /*  position: absolute;*/
+  /*  justify-content: right;*/
+  /*  flex-direction: column;*/
+  /*  transition: width 0.2s, height 0.2s;*/
+
+  /*}*/
   #nav-container {
     position: fixed;
-    width: 100%;
     height: 100%;
     justify-content: left;
   }
@@ -128,7 +140,7 @@ h1, h2, h3, h4, p{
   #main-nav {
 
     padding: 0 0;
-    width: 100%;
+    width: 20rem;
     height: 10%;
     justify-content: space-between;
     flex-direction: column;
@@ -136,7 +148,7 @@ h1, h2, h3, h4, p{
   #main-nav>a {
     margin-left: 0;
     width: 100%;
-    padding: 20px;
+    padding: 20px 100px 20px 20px;
     color: aliceblue;
     text-decoration: none;
   }
@@ -148,10 +160,11 @@ h1, h2, h3, h4, p{
   /*Main content*/
 
   #main-content{
-    overflow-y:scroll ;
-    margin: 0 10vw 0 2%;
-
-    width: 100%;
+    /*overflow-y:scroll ;*/
+    margin: 2%;
+    margin-top: 2rem;
+    height: 100%;
+    width: 98%;
     justify-self: left;
     text-align: left;
   }
@@ -166,8 +179,8 @@ h1, h2, h3, h4, p{
   #menu-button {
     position: fixed;
     right:  0;
-    margin: 0.4rem 0;
-    display: flex;
+    margin: 0.0rem 0;
+    display: none;
     flex-direction: row-reverse;
     justify-content: right;
     border: none;
@@ -177,8 +190,29 @@ h1, h2, h3, h4, p{
     background-color: rgba(220, 201, 201, 0);
     z-index: 12;
   }
+
+  #cancel-button {
+    position: fixed;
+    right:  0;
+    margin: 0.0rem 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    border: none;
+    height: 50px;
+    width: 50px;
+
+    background-color: rgba(220, 201, 201, 0);
+    z-index: 11;
+  }
   #menu-button>img {
     width: 50px;
     height: 50px;
+  }
+
+  #cancel-button>img {
+    margin: auto;
+    width: 20px;
+    height: 20px;
   }
 }

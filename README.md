@@ -1,3 +1,3 @@
 # bloodbank
 
-This site is a basic project
+It is a basic html project

@@ -98,6 +98,11 @@ h1, h2, h3, h4, p{
   display: none;
 }
 
+#icon-div{
+  position:absolute;
+  z-index: 1;
+}
+
 #main_icon {
   width: 60px;
   height: 60px;
@@ -239,6 +244,7 @@ h1, h2, h3, h4, p{
     flex-direction: row-reverse;
     justify-content: space-between;
     background-color: #000;
+    z-index: auto;
   }
   #main_icon {
     height: 60px;
